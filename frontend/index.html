@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tester</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Test</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Question:</h1>
+        <p>The question is here</p>
+        <div class="form-check">
+          <input type="radio" class="form-check-input" id="answer1id" name="groupOfMaterialRadios">
+          <label class="form-check-label" for="answer1id">Option 1</label>
+          <input type="radio" class="form-check-input" id="answer2id" name="groupOfMaterialRadios">
+          <label class="form-check-label" for="answer2id">Option 2</label>
+          <input type="radio" class="form-check-input" id="answer3id" name="groupOfMaterialRadios">
+          <label class="form-check-label" for="answer3id">Option 3</label>
+          <input type="radio" class="form-check-input" id="answer4id" name="groupOfMaterialRadios">
+          <label class="form-check-label" for="answer4id">Option 4</label>
+        </div>
+
+        <input class="btn" type="submit" value="Submit" onclick="handleSubmit()">
+      </form>
+    </section>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
