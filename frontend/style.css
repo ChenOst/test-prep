@@ -5,34 +5,24 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Calibri, Helvetica, sans-serif;
     line-height: 1.6;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  ul li {
-    padding: 5px;
-    background: #f4f4f4;
-    margin: 5px 0;
   }
   
   header {
     background: #f4f4f4;
-    padding: 1rem;
     text-align: center;
+    font-size: 35px;
   }
   .container {
     margin: auto;
-    width: 1000px;
+    width: 750px;
     overflow: auto;
-    padding: 3rem 2rem;
+    padding: 5rem 2rem;
   }
   .containerAnalysis {
     margin: auto;
-    width: 1000px;
+    width: 750px;
     overflow: auto;
     padding: 1rem 0.5rem;
   }
@@ -40,8 +30,14 @@
     padding: 1rem;
     background: #f4f4f4;
   }
-  
   #my-form label {
+    display: block;
+  }
+  .my-form {
+    padding: 1rem;
+    background: #f4f4f4;
+  }
+  .my-form label {
     display: block;
   }
 
@@ -51,15 +47,6 @@
     margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-  }
-
-  .my-form {
-    padding: 1rem;
-    background: #f4f4f4;
-  }
-  
-  .my-form label {
-    display: block;
   }
 
   .my-form input[type='text'] {
@@ -72,30 +59,20 @@
   
   .btn {
     display: block;
-    width: 30%;
+    width: 25%;
     padding: 10px 15px;
     border: 0;
-    background: #333;
+    background: #5E5F7E;
     color: #fff;
     border-radius: 5px;
     margin:auto;
+    font-size: 16px;
   }
   
   .btn:hover {
-    background: #444;
+    background: #656790;
   }
-  
-  .bg-dark {
-    background: #333;
-    color: #fff;
-  }
-  
-  .error {
-    background: orangered;
-    color: #fff;
-    padding: 5px;
-    margin: 5px;
-  }
+
 
   input[type='radio']:after {
     width: 15px;
@@ -104,7 +81,7 @@
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #d1d3d1;
+    background-color: #FBFBFB;
     content: '';
     display: inline-block;
     visibility: visible;
@@ -118,7 +95,7 @@ input[type='radio']:checked:after {
     top: -2px;
     left: -1px;
     position: relative;
-    background-color: #000000;
+    background-color: #D8D8D8;
     content: '';
     display: inline-block;
     visibility: visible;

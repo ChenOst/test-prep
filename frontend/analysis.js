@@ -15,7 +15,7 @@ function showScore() {
     let score = analysisByServer.testScore;
     document.getElementById("placeholder").innerHTML += '<section class="containerAnalysis">' +
         '      <form class="my-form">' +
-        '        <h1>Final Score: </h1>' + score +
+        '        <h1>Final Score: </h1>' + score + "/100" +
         '        <div class="form-check">' +
         '</div>' +
         '</form>' +
@@ -49,8 +49,7 @@ function showTestConclusion() {
         }
         htmlStr += '<section class="containerAnalysis">' +
             '      <form class="my-form" style="background:' + (rightAnswer === userAnswer ? '#32CD32;"' : '#FA8072;"') + '>' +
-            '        <h1>Question:</h1>' +
-            '        <p>' + currentItem.description + '</p>' +
+            '        <p style="font-size: 25px;">' + currentItem.description + '</p>' +
             '        <div class="form-check">' +
             answerStr;
         // document.getElementById("placeholder").innerHTML += currentItem.description + "</br>";

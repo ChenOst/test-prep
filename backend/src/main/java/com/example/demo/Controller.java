@@ -24,11 +24,8 @@ public class Controller {
     }
 
     @CrossOrigin
-    @RequestMapping(method = { RequestMethod.GET, RequestMethod.POST }, value = "/testAnalysis")
+    @RequestMapping(method=RequestMethod.POST, value="/testAnalysis")
     public TestAnalysis processTestAnalysis(@RequestBody JsonNode jsonNode){
-        for(JsonNode node: jsonNode){
-            System.out.println(node);
-        }
         return service.getTestAnalysis(jsonNode);
     }
 }
