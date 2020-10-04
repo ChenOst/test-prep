@@ -8,7 +8,7 @@ Every student at Ariel University is required to take a number of heritage cours
   the software builds for the student a test with several questions according to his
    choice and returns a score according to his success.
    
-![](demonstration.gif)
+![](Readme/demonstration.gif)
 
 ## User Connection
 After you download/ clone the repository make sure to change the `Application.properties` file accordingly to your information.
@@ -31,4 +31,4 @@ my-properties.numberOfQuestions=5
 ### Docx parser
 In order for the program to work the file should be in a specific form.
 
-<img src="Readme/fileExample.png"> 
+<img src="Readme/fileExample.png" width="200"> 
