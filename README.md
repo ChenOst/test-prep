@@ -22,6 +22,7 @@ my-properties.numberOfQuestions= choose the number of question in each test
 **NOTE: don't change the first line!**
 
 You only need to change the second and the third lines.
+
 For Example:
 ```
 spring.jpa.hibernate.ddl-auto=update
@@ -30,5 +31,9 @@ my-properties.numberOfQuestions=5
 ```
 ### Docx parser
 In order for the program to work the file should be in a specific form.
+Each question description must be written as X. when X is an integer number. Each question contains multiple answers each answer must writtern as Y. when Y is an english letter, the first answer should be the right answer.
+The file should not include spaces.
 
-<img src="Readme/fileExample.png" width="200"> 
+For Example:
+
+<img src="Readme/fileExample.png" width="500"> 
