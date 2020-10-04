@@ -11,6 +11,9 @@ public class Service {
     @Autowired
     private QuestionRepository repository;
 
+    @Autowired
+    private MyProperties myProperties;
+
     // Get all the questions from the docx file
     public List<Question> getQuestionList(){
         return repository.findAll();
@@ -18,10 +21,9 @@ public class Service {
 
     // Get specific amount of different questions - inorder to create a test
     public List<Question> getRandomTest(){
-
         Long DBSize = repository.count();
         // put here you the number of questions you want in the test
-        int questionsInTest = 5;
+        int questionsInTest = myProperties.getNumberOfQuestions();
         List<Question> randomTest = new ArrayList<>();
 
         if(DBSize < questionsInTest){

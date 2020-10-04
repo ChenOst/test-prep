@@ -2,11 +2,15 @@ package com.example.demo;
 
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.*;
 
+@Component
 public class DocxParser {
 
     /**
@@ -14,9 +18,9 @@ public class DocxParser {
      * Every question saved in the DB with primary key id.
      * @return list of all the qeustions from the dock file
      */
-    public static List<Question> readDocxFile() {
+    public static List<Question> readDocxFile(String path) {
         // The path of the file - enter here your path
-        String myDocxPath = "C:\\Users\\Chen\\Desktop\\test.docx";
+        String myDocxPath = path;
         int id = 0;
         List<Question> questionList = new ArrayList<>();
 

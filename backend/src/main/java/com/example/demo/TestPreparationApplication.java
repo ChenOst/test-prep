@@ -11,6 +11,9 @@ public class TestPreparationApplication {
 
 	@Autowired
 	private QuestionRepository repository;
+	@Autowired
+	private MyProperties myProperties;
+
 	DocxParser docxParser;
 
 	public static void main(String[] args) {
@@ -20,7 +23,7 @@ public class TestPreparationApplication {
 	@Bean
 	public CommandLineRunner sendDatabase() {
 		return (args) -> {
-			repository.saveAll(docxParser.readDocxFile());
+			repository.saveAll(docxParser.readDocxFile(myProperties.getPath()));
 		};
 	}
 }
