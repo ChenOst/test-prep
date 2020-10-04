@@ -15,17 +15,20 @@ After you download/ clone the repository make sure to change the `Application.pr
 
 This is how it looks:
 ```
+# Env variables
 spring.jpa.hibernate.ddl-auto=update
+# DDL Config
 my-properties.path= puth you docx path over here
 my-properties.numberOfQuestions= choose the number of question in each test
 ```
-**NOTE: don't change the first line!**
 
 You only need to change the second and the third lines.
 
 For Example:
 ```
+# Env variables
 spring.jpa.hibernate.ddl-auto=update
+# DDL Config
 my-properties.path=C:\\Users\\Chen\\Desktop\\test.docx
 my-properties.numberOfQuestions=5
 ```
