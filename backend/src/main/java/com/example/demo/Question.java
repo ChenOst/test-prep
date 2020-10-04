@@ -1,8 +1,8 @@
 package com.example.demo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -12,6 +12,7 @@ public class Question {
     @Id
     private Integer id;
     private String description;
+    @Column(length = 1000)
     private LinkedHashMap<String, Boolean> answers;
 
     public Question(){

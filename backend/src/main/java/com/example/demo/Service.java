@@ -20,7 +20,8 @@ public class Service {
     public List<Question> getRandomTest(){
 
         Long DBSize = repository.count();
-        int questionsInTest = 3;
+        // put here you the number of questions you want in the test
+        int questionsInTest = 5;
         List<Question> randomTest = new ArrayList<>();
 
         if(DBSize < questionsInTest){

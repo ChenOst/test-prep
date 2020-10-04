@@ -30,7 +30,6 @@ public class DocxParser {
             Random rand = new Random();
 
             for (XWPFParagraph para : paragraphs) {
-                // create a new question
                 if(para.getNumFmt().equals("decimal") && para.getStyle().equals("ListParagraph")){
                     question = new Question();
                     temp = new LinkedHashMap<String, Boolean>();

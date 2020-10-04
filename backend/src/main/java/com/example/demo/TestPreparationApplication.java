@@ -1,6 +1,5 @@
 package com.example.demo;
 
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +11,6 @@ public class TestPreparationApplication {
 
 	@Autowired
 	private QuestionRepository repository;
-
 	DocxParser docxParser;
 
 	public static void main(String[] args) {
