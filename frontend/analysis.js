@@ -52,13 +52,6 @@ function showTestConclusion() {
             '        <p style="font-size: 25px;">' + currentItem.description + '</p>' +
             '        <div class="form-check">' +
             answerStr;
-        // document.getElementById("placeholder").innerHTML += currentItem.description + "</br>";
-        // for (let ans in currentItem.answers) {
-        //     document.getElementById("placeholder").innerHTML += (currentItem.answers[ans] ? `<b>${ans}</b>` : ans) + " ";
-        // }
-        // document.getElementById("placeholder").innerHTML += "</br>";
-        // document.getElementById("placeholder").innerHTML += userTest[i].userAnswer;
-        // document.getElementById("placeholder").innerHTML += "</br>";
         htmlStr += '</div>' +
             '</form>' +
             '</section>';
