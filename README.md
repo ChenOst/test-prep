@@ -30,9 +30,10 @@ my-properties.path=C:\\Users\\Chen\\Desktop\\test.docx
 my-properties.numberOfQuestions=5
 ```
 ### Docx parser
-In order for the program to work the file should be in a specific form.
-Each question description must be written as X. when X is an integer number. Each question contains multiple answers each answer must writtern as Y. when Y is an english letter, the first answer should be the right answer.
-The file should not include spaces.
+In order for the program to work the file should be in a specific form:
+* Each question description must be written as X. when X is an integer number.
+* Each question contains multiple answers each answer must written as Y. when Y is an english letter, the first answer should be the right answer.
+* The file should not include spaces.
 
 For Example:
 
